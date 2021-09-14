@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Sign-Up Form</title>
+        <style>
+            #error1,#error2,#error3{
+                color: red;
+            }
+          body{
+              background-color:salmon;
+          }
+          #btn{
+              height: 40px;
+              width: 100px;
+              background-color: darkred;
+              color: darkgray;
+              font-size: 17px;
+          }
+          label{
+              font-size: 25px;
+              color:crimson;
+              font-weight: bold;
+          }
+          #btn:hover{
+              background-color: darkslategray;
+          }
+          input{
+              height: 30px;
+              width: 200px;
+          }
+          h1{
+            font-size: 40px;
+              color:gray;
+          }
+          footer{
+              margin-top: 200px;
+              height: 40px;
+          }
+          button{
+              height: 40px;
+              width: 100px;
+              border: black 2px groove;
+              background-color: darkslategray;
+              margin-left: 40%;
+             margin-right: 40%;
+             font-weight: bold;
+             font-size: 20px;
+          }
+          button:hover{
+              background-color: lightskyblue;
+          }
+        </style>
+        
+    </head>
+    <body>
+        <form action="Success.html" onsubmit="return validateform()" novalidate>
+            <h1>Contact Us</h1>
+            <table>
+            <tr><td><label for="fname">Enter Name:</label></td><td><input type="text" id="fname" name="name" onblur="validate1()" pattern="[A-Za_z]+"></td></tr>
+            <tr><td></td><td id="error1"></td></tr>
+            <tr><td><label for="mail">Email Id</label></td><td><input type="Email" id="mail" name="name" onblur="validate3()"></td></tr>
+            <tr><td></td><td id="error3"></td></tr>
+            <tr><td><button onclick="validateform()">SUBMIT</button></td><td><button>Reset</button></td></tr>
+            
+            </table>
+          </form>
+         <footer style="background-color: darkslategray;">
+          <a href="Assignment2.html"><button>BACK</button></a>
+         </footer>
+
+         <script src="ContactUs.js"></script>
+        </body>
+    </html>
+
